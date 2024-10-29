@@ -14,8 +14,6 @@ function addMember(){
       img: "./img/default.jpg"
   };
 
-  team.push(newMember);
-
   document.getElementById("card-div").innerHTML += `
       <div class="card d-flex flex-row">
           <img src="${newMember.img}" class="img">
