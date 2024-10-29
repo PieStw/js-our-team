@@ -12,15 +12,27 @@
 </head>
 <body>
 
-  <div class="main-div">
+  <div class="main-div container">
     <h1 class="title mt-5">Meet our Team</h1>
     <p class="sub-title mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet culpa eius assumenda corrupti vitae ratione, 
       quos iure veritatis quam similique aliquam facere exercitationem soluta voluptatibus iusto debitis deleniti explicabo.</p>
 
+    <div class="form row">
+      <div class="col-3">
+        <input class="form-control" type="text" placeholder="Nome e Cognome" required id="name">
+      </div>
+      <div class="col-3">
+        <input class="form-control" type="text" placeholder="Ruolo" required id="role">
+      </div>
+      <div class="col-3">
+        <input class="form-control" type="text" placeholder="Email" required id="email">
+      </div>
+      <div class="col-3">
+        <button type="submit" class="btn btn-primary" id="add-member">Aggiungi utente</button>
+      </div>
+    </div>
+
     <div class="card-div d-flex flex-wrap gap-4 justify-content-center mt-5" id="card-div">
-
-
-
     </div>
   </div>
   <script src="script.js"></script>

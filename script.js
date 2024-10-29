@@ -1,4 +1,36 @@
 
+function addMember(){
+
+  const name = document.getElementById("name");
+  const role = document.getElementById("role");
+  const email = document.getElementById("email");
+
+  if (name.value == "" || role.value == "" || email.value == "") return alert("compila i campi per aggiungere un nuovo membro");
+
+  const newMember = {
+      nome: name.value,
+      ruolo: role.value,
+      email: email.value,
+      img: "./img/default.jpg"
+  };
+
+  team.push(newMember);
+
+  document.getElementById("card-div").innerHTML += `
+      <div class="card d-flex flex-row">
+          <img src="${newMember.img}" class="img">
+          <div class="card-body mt-1">
+              <p class="card-text fs-5 text"><b>${newMember.nome.toUpperCase()}</b></p>
+              <p class="card-text">${newMember.ruolo}</p>
+              <p class="card-text text-primary">${newMember.email}</p>
+          </div>
+      </div>`;
+
+  name.value = "";
+  role.value = "";
+  email.value = "";
+}
+
 
 let team = [];
 
@@ -21,3 +53,6 @@ for(let i = 0; i < team.length; i++){
                                                       </div>
                                                     </div>`;
 }
+
+
+document.getElementById("add-member").addEventListener("click", addMember);
