@@ -14,10 +14,10 @@ team.push(member = {nome:`Daniela Amet`, ruolo: "Analyst", email: "danielaamet@t
 for(let i = 0; i < team.length; i++){
   document.getElementById("card-div").innerHTML += `<div class="card d-flex flex-row">
                                                       <img src="${team[i].img}" class="img">
-                                                      <div class="card-body">
-                                                        <p class="card-text">${team[i].nome.toUpperCase()}</p>
+                                                      <div class="card-body mt-1 ">
+                                                        <p class="card-text fs-5 text"><b>${team[i].nome.toUpperCase()}</b></p>
                                                         <p class="card-text">${team[i].ruolo}</p>
-                                                        <p class="card-text">${team[i].email}</p>
+                                                        <p class="card-text text-primary">${team[i].email}</p>
                                                       </div>
                                                     </div>`;
 }

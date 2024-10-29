@@ -23,3 +23,16 @@
     color: white;
     border-radius: 0;
   }
+
+  .title{
+    color: #E53170;
+    text-align: center;
+  }
+
+  .sub-title{
+    text-align: center;
+  }
+
+  .main-div{
+    font-family: "Fredoka", sans-serif;
+  }
